@@ -71,6 +71,32 @@ public class Main {
         for ( int i = 10; i >= 1; i--){
             System.out.println(n1 + " x " + i + " = " + n1*i);
         }
+
+    }
+    public static void bonus (){
+        Scanner sc;
+        sc = new Scanner(System.in);
+        int n1;
+        int max = Integer.MIN_VALUE;
+        int min = Integer.MAX_VALUE;
+
+        System.out.println("Ingrese números enteros positivos y ingrese un numero negativo para finalizar.");
+
+        do {
+            System.out.println("Ingrese un numero");
+            n1 = sc.nextInt();
+
+            if ( n1 >= 0){
+                if (n1 > max){
+                    max = n1;
+                }
+            }
+            if ( n1 <= min){
+                min = n1;
+            }
+        }while (n1 >= 0);
+        System.out.println("El numero más grande es: " + max);
+        System.out.println("El numero más pequeño es: " + min);
     }
 
 
@@ -88,7 +114,8 @@ public class Main {
             System.out.println("4 Factorial de un numero");
             System.out.println("5 Tabla de multiplicar");
             System.out.println("6 Salir");
-            System.out.print("Seleccione una opción ");
+            System.out.println("7 Bonus ");
+            System.out.println("Seleccione una opción ");
 
             opcion = sc.nextInt();
 
@@ -110,6 +137,9 @@ public class Main {
                     break;
                 case 6:
                     System.out.println("Saliendo del programa,orale");
+                    break;
+                case 7:
+                    bonus();
                     break;
             }
 
