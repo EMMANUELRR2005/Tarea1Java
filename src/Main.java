@@ -38,7 +38,7 @@ public class Main {
             System.out.println("El número es impar");
         }
     }
-    public static void factorial_numeros(){
+    public static void factorial_numeross(){
          Scanner sc;
          sc = new Scanner(System.in);
          int n1;
@@ -84,7 +84,7 @@ public class Main {
                     numero_par();
                     break;
                 case 4:
-                    factorial_numeros();
+                    factorial_numeross();
                     break;
                 case 6:
                     System.out.println("Saliendo del programa,orale");
