@@ -23,6 +23,38 @@ public class Main {
         System.out.println( respuesta);
 
     }
+    public static void numero_par(){
+        Scanner sc;
+        sc = new Scanner(System.in);
+        int n1;
+
+        System.out.println("Ingrese el número");
+        n1 = sc.nextInt();
+
+        if ( n1 % 2 == 0){
+            System.out.println("El número es par");
+        }
+        else{
+            System.out.println("El número es impar");
+        }
+    }
+    public static void factorial_numeros(){
+         Scanner sc;
+         sc = new Scanner(System.in);
+         int n1;
+
+         System.out.println("Ingrese el número");
+         n1 = sc.nextInt();
+
+         long factorial = 1;
+
+         for (int i = 1; i <= n1; i++){
+             factorial *= i;
+         }
+         System.out.println("El factorial de" + n1 + " es: " + factorial     );
+    }
+
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
@@ -47,6 +79,12 @@ public class Main {
                     break;
                 case 2:
                     Suma_numeros();
+                    break;
+                case 3:
+                    numero_par();
+                    break;
+                case 4:
+                    factorial_numeros();
                     break;
                 case 6:
                     System.out.println("Saliendo del programa,orale");
