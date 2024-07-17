@@ -53,6 +53,25 @@ public class Main {
          }
          System.out.println("El factorial de" + n1 + " es: " + factorial     );
     }
+    public static void tabla_multiplicar (){
+        Scanner sc;
+        sc = new Scanner(System.in);
+        int n1;
+
+        System.out.println("Ingrese el numero que desea ver la tabla");
+        n1 = sc.nextInt();
+
+        System.out.println("Manera ascendente");
+
+        for ( int i = 1; i <= 10; i++){
+            System.out.println(n1 + " x " + i + " = " + n1*i);
+        }
+
+        System.out.println("Manera descendente");
+        for ( int i = 10; i >= 1; i--){
+            System.out.println(n1 + " x " + i + " = " + n1*i);
+        }
+    }
 
 
     public static void main(String[] args) {
@@ -85,6 +104,9 @@ public class Main {
                     break;
                 case 4:
                     factorial_numeross();
+                    break;
+                case 5:
+                    tabla_multiplicar();
                     break;
                 case 6:
                     System.out.println("Saliendo del programa,orale");
